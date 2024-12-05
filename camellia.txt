@@ -1,26 +1,25 @@
 # kanged from ayush (oops)
 
 # Repo (I need LMODroid for now)
-repo init -u https://git.libremobileos.com/LMODroid/manifest.git -b fourteen-qpr1 --git-lfs
-
+repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 
 # Prebuilt Kernel
 git clone https://github.com/dm700-devs/device_xiaomi_camellia-kernel device/xiaomi/camellia-kernel
 
 # Device Tree
-git clone https://github.com/OrdinaryEnder/device_xiaomi_camellia -b fourteen device_xiaomi_camellia
+git clone https://github.com/OrdinaryEnder/device_xiaomi_camellia -b thirteen device_xiaomi_camellia
 
 # Vendor
-git clone https://github.com/dm700-devs/vendor_xiaomi_camellia -b fourteen vendor/xiaomi/camellia
+git clone https://github.com/ayushqui/vendor_xiaomi_chameli -b dolby vendor/xiaomi/camellia
 
 # Sepolicies
-git clone https://github.com/xiaomi-mediatek-devs/android_device_mediatek_sepolicy_vndr -b lineage-21  device/mediatek/sepolicy_vndr          
+git clone https://github.com/xiaomi-mediatek-devs/android_device_mediatek_sepolicy_vndr -b lineage-20  device/mediatek/sepolicy_vndr          
 
 # Hardware
-git clone https://github.com/PQEnablers-Devices/android_hardware_mediatek.git -b lineage-21 hardware/mediatek
+git clone https://github.com/PQEnablers-Devices/android_hardware_mediatek.git -b lineage-20 hardware/mediatek
 
 # Hardware Xiaomi
-git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 hardware/xiaomi
 
 #viperfx
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages_apps_VIPER4AndroidFX
